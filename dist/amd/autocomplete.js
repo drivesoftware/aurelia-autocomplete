@@ -212,14 +212,7 @@ define(['exports', 'aurelia-binding', 'aurelia-templating', 'aurelia-templating-
         return;
       }
 
-      if (key === 13) {
-        if (this.index >= 0) {
-          this.select(this.suggestions[this.index]);
-        }
-        return;
-      }
-
-      if (key === 9) {
+      if (key === 13 || key === 9) {
         if (this.index >= 0) {
           this.select(this.suggestions[this.index]);
         }

@@ -201,20 +201,13 @@ export let Autocomplete = (_dec = inject(Element, BindingEngine, TaskQueue, Opti
       return;
     }
 
-    if (key === 13) {
+    if (key === 13 || key === 9) {
       if (this.index >= 0) {
         this.select(this.suggestions[this.index]);
       }
       return;
     }
     
-    if (key === 9) {
-      if (this.index >= 0) {
-        this.select(this.suggestions[this.index]);
-      }
-      return;
-    }
-
     return true;
   }
 
