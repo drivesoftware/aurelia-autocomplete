@@ -227,6 +227,13 @@ var Autocomplete = exports.Autocomplete = (_dec = (0, _aureliaDependencyInjectio
       }
       return;
     }
+    
+    if (key === 9) {
+      if (this.index >= 0) {
+        this.select(this.suggestions[this.index]);
+      }
+      return;
+    }
 
     return true;
   };

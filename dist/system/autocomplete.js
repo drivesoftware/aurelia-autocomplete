@@ -236,6 +236,13 @@ System.register(['aurelia-binding', 'aurelia-templating', 'aurelia-templating-re
             }
             return;
           }
+          
+          if (key === 9) {
+            if (this.index >= 0) {
+              this.select(this.suggestions[this.index]);
+            }
+            return;
+          }
 
           return true;
         };
