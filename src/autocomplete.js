@@ -161,6 +161,14 @@ export class Autocomplete {
       return;
     }
 
+    // tab
+    if (key === 9) {
+      if (this.index >= 0) {
+        this.select(this.suggestions[this.index]);
+      }
+      return;
+    }
+
     return true;
   }
 
