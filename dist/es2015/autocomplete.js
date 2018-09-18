@@ -207,7 +207,7 @@ export let Autocomplete = (_dec = inject(Element, BindingEngine, TaskQueue, Opti
       }
       return;
     }
-    
+
     return true;
   }
 
